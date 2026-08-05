@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Siamo | EdilNova Treviso</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Layout specifico per la pagina Chi Siamo */
+        .direttore-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: 20px auto 40px auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid #f39c12;
+            text-align: left;
+        }
+        .direttore-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            background: #ddd;
+        }
+        .direttore-info h3 {
+            font-size: 18px;
+            color: #111;
+            margin-bottom: 2px;
+        }
+        .direttore-info p.role {
+            font-size: 14px;
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        /* Sezione Squadra e Testo a 360 gradi */
+        .squadra-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-top: 30px;
+            text-align: left;
+        }
+        .squadra-text h2 {
+            font-size: 26px;
+            color: #111;
+            margin-bottom: 15px;
+        }
+        .squadra-text p {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        .squadra-img-container {
+            width: 100%;
+            height: 320px;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            background-color: #ddd;
+        }
+
+        @media(max-width: 768px) {
+            .squadra-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="images/icon.png" alt="EdilNova Icona" class="logo-icon">
+            <span class="logo-text">Edil<span>Nova</span></span>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="chisiamo.html" class="active">Chi Siamo</a>
+            <a href="lavori.html">Lavori</a>
+            <a href="contatti.html" class="btn-nav">Contattaci</a>
+        </nav>
+    </header>
+
+    <!-- Contenuto Principale -->
+    <section class="page-content">
+        <div class="container-testo">
+            <h1>La Nostra Azienda e la Nostra Filosofia</h1>
+            <p><strong>EdilNova</strong> nasce con l'obiettivo di offrire standard elevati nel settore edile a Treviso e provincia, garantendo qualità, trasparenza e puntualità.</p>
+        </div>
+
+        <!-- Foto Direttore Piccola sotto l'H1 -->
+        <div class="direttore-box">
+            <!-- Foto casuale segnaposto (sostituirai con la tua foto) -->
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Direttore Tecnico" class="direttore-img">
+            <div class="direttore-info">
+                <h3>Marco Rossi</h3>
+                <p class="role">Direttore Tecnico & Fondatore</p>
+                <p style="font-size: 13px; color: #666; margin: 0;">Supervisione diretta di ogni cantiere.</p>
+            </div>
+        </div>
+
+        <!-- Sezione Squadra e Testo a 360 gradi -->
+        <div class="squadra-section">
+            <div class="squadra-text">
+                <h2>Una Squadra Completa per un Lavoro a 360°</h2>
+                <p>Non dovrai preoccuparti di coordinare professionisti diversi: EdilNova mette a tua disposizione una squadra completa di tutti gli specialisti necessari.</p>
+                <p>Dalla demolizione iniziale alle opere murarie, dagli impianti elettrici e idraulici fino alle finiture di pregio e alla posa del cartongesso, gestiamo l'intero progetto chiavi in mano.</p>
+                <p>Questo ci permette di azzerare i ritardi, ottimizzare i costi e garantirti un interlocutore unico e affidabile per tutta la durata dei lavori.</p>
+            </div>
+            <div>
+                <!-- Foto casuale segnaposto della squadra (sostituirai con la tua foto) -->
+                <div class="squadra-img-container" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d0fbb18f844b?auto=format&fit=crop&w=800&q=80');"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 EdilNova - Via Roma 15, Treviso (TV) - P.IVA 12345678901. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>

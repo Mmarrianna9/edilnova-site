@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Nostri Lavori | EdilNova Treviso</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Stile specifico per il confronto Prima / Dopo */
+        .portfolio-grid-lavori {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .card-confronto {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+        /* Contenitore diviso in due per Prima e Dopo */
+        .confronto-immagini {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 220px;
+            position: relative;
+        }
+        .img-meta {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        /* Etichette Prima e Dopo */
+        .badge-stato {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            padding: 4px 10px;
+            font-size: 11px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        .badge-prima {
+            background: rgba(192, 57, 43, 0.85); /* Rosso scuro per il Prima */
+        }
+        .badge-dopo {
+            background: rgba(39, 174, 96, 0.85); /* Verde per il Dopo */
+        }
+        .card-lavoro-text {
+            padding: 20px;
+        }
+        .card-lavoro-text h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #111;
+        }
+        .card-lavoro-text p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="images/icon.png" alt="EdilNova Icona" class="logo-icon">
+            <span class="logo-text">Edil<span>Nova</span></span>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="chisiamo.html">Chi Siamo</a>
+            <a href="lavori.html" class="active">Lavori</a>
+            <a href="contatti.html" class="btn-nav">Contattaci</a>
+        </nav>
+    </header>
+
+    <!-- Contenuto Lavori -->
+    <section class="page-content">
+        <div class="container-testo">
+            <h1>I Nostri Cantieri: Prima e Dopo</h1>
+            <p>Guarda la trasformazione dei nostri interventi. La cura dei dettagli e la qualità delle nostre ristrutturazioni chiavi in mano a Treviso e provincia.</p>
+        </div>
+
+        <div class="portfolio-grid-lavori">
+            
+            <!-- Progetto 1 -->
+            <div class="card-confronto">
+                <div class="confronto-immagini">
+                    <!-- Foto Prima -->
+                    <div class="img-meta" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=500&q=80');">
+                        <span class="badge-stato badge-prima">Prima</span>
+                    </div>
+                    <!-- Foto Dopo -->
+                    <div class="img-meta" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=500&q=80');">
+                        <span class="badge-stato badge-dopo">Dopo</span>
+                    </div>
+                </div>
+                <div class="card-lavoro-text">
+                    <h3>Ristrutturazione Appartamento</h3>
+                    <p>Treviso - Riqualificazione totale degli spazi interni, nuovi impianti e finiture moderne.</p>
+                </div>
+            </div>
+
+            <!-- Progetto 2 -->
+            <div class="card-confronto">
+                <div class="confronto-immagini">
+                    <!-- Foto Prima -->
+                    <div class="img-meta" style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80');">
+                        <span class="badge-stato badge-prima">Prima</span>
+                    </div>
+                    <!-- Foto Dopo -->
+                    <div class="img-meta" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80');">
+                        <span class="badge-stato badge-dopo">Dopo</span>
+                    </div>
+                </div>
+                <div class="card-lavoro-text">
+                    <h3>Rifacimento Facciata e Cappotto</h3>
+                    <p>Provincia di Treviso - Isolamento termico esterno e restauro estetico della palazzina.</p>
+                </div>
+            </div>
+
+            <!-- Progetto 3 -->
+            <div class="card-confronto">
+                <div class="confronto-immagini">
+                    <!-- Foto Prima -->
+                    <div class="img-meta" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d0fbb18f844b?auto=format&fit=crop&w=500&q=80');">
+                        <span class="badge-stato badge-prima">Prima</span>
+                    </div>
+                    <!-- Foto Dopo -->
+                    <div class="img-meta" style="background-image: url('https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=500&q=80');">
+                        <span class="badge-stato badge-dopo">Dopo</span>
+                    </div>
+                </div>
+                <div class="card-lavoro-text">
+                    <h3>Ristrutturazione Zona Giorno</h3>
+                    <p>Treviso - Creazione di un ambiente open space luminoso con controsoffitti in cartongesso.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 EdilNova - Via Roma 15, Treviso (TV) - P.IVA 12345678901. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>

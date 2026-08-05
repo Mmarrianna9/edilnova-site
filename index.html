@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdilNova | Ristrutturazioni e Costruzioni a Treviso</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { background-color: #fffaf5; }
+        
+        /* Sfondo Hero scuro/arancione molto più compatto in altezza */
+        .hero {
+            background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(243, 156, 18, 0.45)), url('https://images.unsplash.com/photo-1541888946425-d0fbb18f844b?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: auto;
+            padding: 40px 20px; /* Ridotta l'altezza della fascia di sfondo */
+            border-bottom: 4px solid #f39c12;
+        }
+        .hero-content h1 { font-size: 36px; margin-bottom: 12px; }
+        .hero-content p { font-size: 18px; margin-bottom: 20px; }
+
+        /* Sezione benvenuto ordinata */
+        .welcome-vivace {
+            padding: 40px 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .welcome-text h2 { font-size: 28px; margin-bottom: 15px; color: #111; }
+        .welcome-text h2 span { color: #f39c12; }
+        .welcome-text p { font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 15px; }
+        
+        .foto-angolo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .foto-angolo {
+            height: 150px;
+            border-radius: 6px;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+        }
+
+        /* Sezione Servizi con fascia colorata contenuta */
+        .servizi-vivaci {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 35px 30px; /* Sfondo compatto */
+            margin: 20px 0;
+            text-align: center;
+            border-top: 2px solid #f39c12;
+            border-bottom: 2px solid #f39c12;
+        }
+        .servizi-vivaci h2 { font-size: 28px; margin-bottom: 30px; color: #111; }
+        
+        /* Banner finale */
+        .cta-banner {
+            background: #111;
+            color: #fff;
+            padding: 35px 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .cta-banner h2 { font-size: 26px; margin-bottom: 10px; color: #fff; }
+        .cta-banner h2 span { color: #f39c12; }
+        .cta-banner p { font-size: 16px; color: #ccc; margin-bottom: 20px; }
+
+        @media(max-width: 768px) {
+            .welcome-vivace { grid-template-columns: 1fr; padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigazione -->
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="images/icon.png" alt="EdilNova Icona" class="logo-icon">
+            <span class="logo-text">Edil<span>Nova</span></span>
+        </a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="chisiamo.html">Chi Siamo</a>
+            <a href="lavori.html">Lavori</a>
+            <a href="contatti.html" class="btn-nav">Contattaci</a>
+        </nav>
+    </header>
+
+    <!-- Fascia Hero scura/arancione ridotta in altezza -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Costruiamo e Ristrutturiamo con Passione</h1>
+            <p>Soluzioni edili moderne e finiture di pregio a Treviso e provincia.</p>
+            <a href="contatti.html" class="btn-primary">Richiedi un Preventivo Gratuito</a>
+        </div>
+    </section>
+
+    <!-- Sezione di Benvenuto -->
+    <section class="welcome-vivace">
+        <div class="welcome-text">
+            <h2>Specialisti Edili a <span>Treviso</span></h2>
+            <p>Dimentica lo stress dei cantieri. Con EdilNova hai un team dinamico, puntuale e creativo che trasforma ogni spazio in un ambiente unico e sicuro.</p>
+            <a href="chisiamo.html" class="btn-primary" style="background: #111; color: #fff;">Scopri il nostro team</a>
+        </div>
+        <div class="foto-angolo-grid">
+            <div class="foto-angolo" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80'); transform: rotate(-2deg);"></div>
+            <div class="foto-angolo" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80'); transform: rotate(3deg); margin-top: 10px;"></div>
+        </div>
+    </section>
+
+    <!-- Sezione Servizi -->
+    <section class="servizi-vivaci">
+        <h2>I Nostri Servizi Principali</h2>
+        <div class="card-grid" style="max-width: 1100px; margin: 0 auto;">
+            <div class="card">
+                <h3>Ristrutturazioni Chiavi in Mano</h3>
+                <p>Gestiamo ogni fase del cantiere, dalla demolizione alle finiture finali.</p>
+            </div>
+            <div class="card">
+                <h3>Isolamento Termico</h3>
+                <p>Cappotti termici ad alta efficienza per il massimo risparmio energetico.</p>
+            </div>
+            <div class="card">
+                <h3>Finiture e Interni</h3>
+                <p>Cartongesso artistico, imbiancature e pavimentazioni di alto livello.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner finale Call to Action -->
+    <section class="cta-banner">
+        <h2>Pronto a rinnovare la tua <span>casa</span>?</h2>
+        <p>Contattaci oggi stesso per un sopralluogo e un preventivo gratuito senza impegno.</p>
+        <a href="contatti.html" class="btn-primary">Contattaci Ora</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 EdilNova - Treviso (TV) - P.IVA 12345678901. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>

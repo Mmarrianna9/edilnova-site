@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | EdilNova</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="/" class="logo-container">
+            <img src="images/icon.png" alt="EdilNova Icona" class="logo-icon">
+            <span class="logo-text">Edil<span>Nova</span></span>
+        </a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/chisiamo.html">Chi Siamo</a>
+            <a href="/lavori.html">Lavori</a>
+            <a href="/contatti.html" class="active btn-nav">Contattaci</a>
+        </nav>
+    </header>
+
+    <!-- Contenuto Contatti -->
+    <section class="page-content">
+        <div class="container-testo">
+            <h1>Contattaci per un Preventivo Gratuito</h1>
+            <p>Hai in mente un progetto di ristrutturazione o costruzione? Compilando il modulo o chiamandoci direttamente, fisseremo un sopralluogo senza impegno.</p>
+        </div>
+
+        <div class="contatti-wrapper">
+            <div class="info-contatti">
+                <h3>I Nostri Riferimenti</h3>
+                <p>📍 <strong>Indirizzo:</strong> Via Roma 15, Treviso (TV)</p>
+                <p>📞 <strong>Telefono:</strong> +39 0422 000000</p>
+                <p>📱 <strong>WhatsApp:</strong> +39 340 0000000</p>
+                <p>📧 <strong>Email:</strong> info@edilnova.it</p>
+            </div>
+            
+            <div class="form-box">
+                <form action="javascript:alert('Messaggio inviato con successo! Ti ricontatteremo presto.');">
+                    <label for="nome">Nome e Cognome</label>
+                    <input type="text" id="nome" required placeholder="Il tuo nome">
+
+                    <label for="tel">Telefono</label>
+                    <input type="tel" id="tel" required placeholder="Il tuo numero di telefono">
+
+                    <label for="messaggio">Messaggio / Tipo di Lavoro</label>
+                    <textarea id="messaggio" rows="4" required placeholder="Descrivi brevemente il lavoro da fare..."></textarea>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Invia Richiesta</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 EdilNova - P.IVA e Dati Aziendali. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
